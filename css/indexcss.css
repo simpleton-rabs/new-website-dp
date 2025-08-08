@@ -1,0 +1,175 @@
+* {
+    /* border: dotted; */
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Bitcount Grid Double', system-ui;
+    font-size: 4vw;
+}
+
+h2 {
+    font-family: 'Bitcount Grid Double', system-ui;
+    font-size: 3vw;
+}
+
+p {
+    font-family: 'Roboto Mono';
+    font-size: 2vw;
+    /* to keep text paragraphs spaced out */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#container {
+
+    /* margin top/bottom */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* equal space either side */
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 25px;
+
+    padding: 10px;
+    background-color: linen;
+    /* max-width: 800px; */
+    /* min-width: 100px; */
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+#speaker {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+#centre {
+    width: 300px;
+    height: 300px;
+    /* transform: rotatez(0deg); */
+    animation-name: rotateit;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    s
+}
+
+@keyframes rotateit {
+    0% {
+        transform: rotatez(0deg);
+    }
+
+    75% {
+        transform: rotatez(180deg);
+    }
+
+    100% {
+        transform: rotatez(360deg);
+    }
+}
+
+/* //laptops */
+@media (max-width:1200px) {
+    #centre {
+        width: 225px;
+        height: 225px;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+}
+
+/* //landscape tablets */
+@media (max-width:992px) {
+
+    #speaker {
+        width: 50px;
+    }
+
+    #centre {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 4.5vw;
+    }
+
+    h2 {
+        font-size: 3.5vw;
+    }
+
+    p {
+        font-size: 2.5vw;
+    }
+}
+
+
+/* //portrait tablets - large landscape mobile */
+@media (max-width:768px) {
+
+    #speaker {
+        width: 30px;
+    }
+
+    #centre {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 4.5vw;
+    }
+
+    h2 {
+        font-size: 3.5vw;
+    }
+
+    p {
+        font-size: 2.5vw;
+    }
+}
+
+/* //portrait mobile */
+@media (max-width:500px) {
+    #speaker {
+        width: 25px;
+    }
+
+    #centre {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+}

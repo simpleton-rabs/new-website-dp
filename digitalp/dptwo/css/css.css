@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    font-family: 'karma', Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    /* to make main container look like page in photo album */
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+}
+
+/* vw to scale with screen width */
+h1 {
+    font-size: 5vw;
+    color: cornflowerblue;
+}
+
+img {
+    /* actual images sized so that all are same height but different orientations */
+    max-width: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px;
+}
+
+figure {
+    /* align picture and text in centre */
+    text-align: center;
+}
+
+/* vw to scale with screen width */
+figcaption {
+    font-size: 2vw;
+}
+
+#maincontainer {
+    background-color: linen;
+    /* to make main container look like page in photo album */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+#header {
+    text-align: center;
+}
+
+#gallerycontainer {
+    width: 100%;
+    /* 4 x 4 grid for photos as grid items */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;    
+}
+
+/* layout for laptops */
+/* @media (max-width:1200px){
+
+    not used as using vw unit for h1 and figcaption removes need specify size for this screen width 
+
+} */
+
+/* layout for landscape tablet changes grid to two columns */
+@media (max-width:992px){
+    #gallerycontainer {
+        grid-template-columns: repeat(2, 1fr);  
+        grid-template-rows: repeat(8, 1fr);
+    }
+        /* h1  figcaption size adjusted */
+
+        h1{
+            font-size: 3rem;
+        }
+        figcaption{
+            font-size: 1.5rem;
+        }
+}
+
+/* layout for portrait tablet large mobiles keeps grid two columns and HTML picture element changes to square pics */
+@media (max-width:768px){
+    #gallerycontainer {
+        grid-template-columns: repeat(2, 1fr);  
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    /* h1  figcaption size adjusted */
+
+    h1{
+        font-size: 2.5rem;
+    }
+    figcaption{
+        font-size: 1.25rem;
+    }
+}
+/* layout for mobile changes grid to one column and uses square pics */
+@media (max-width:500px){
+    #gallerycontainer {
+        grid-template-columns: repeat(1, 1fr);  
+        grid-template-rows: repeat(16, 1fr);
+    }
+    /* h1  figcaption size adjusted */
+    h1{
+        font-size: 2rem;
+    }
+
+    figcaption{
+        font-size: 1.25rem;
+    }
+}

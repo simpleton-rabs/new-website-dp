@@ -1,0 +1,209 @@
+
+p {
+    font-family: 'Roboto Mono';
+    font-size: 1.5vw;
+    /* to keep text paragraphs spaced out */
+    /* margin-top: 5px; */
+    /* margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px; */
+
+    margin: 0 25px 25px 25px;
+    text-align: justify;
+
+}
+
+
+figure {
+    text-align: center;
+    margin: 0 0 25px 0;
+    /* width: 80%; */
+}
+
+figure > img {
+    width: 90%;
+}
+
+figcaption {
+    font-family: 'Roboto Mono';
+    font-size: 1.5vw;
+    /* to keep text paragraphs spaced out */
+    /* margin-top: 5px; */
+    /* margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px; */
+
+ 
+}
+
+.arrow {
+    display: none;
+}
+
+#slideshow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* //laptops */
+@media (max-width:1200px) {
+    #centre {
+        width: 225px;
+        height: 225px;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+}
+
+/* //landscape tablets */
+@media (max-width:992px) {
+
+    #speaker {
+        width: 50px;
+    }
+
+    #centre {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 4.5vw;
+    }
+
+    h2 {
+        font-size: 3.5vw;
+    }
+
+    p {
+        font-size: 2.5vw;
+    }
+}
+
+
+/* //portrait tablets - large landscape mobile */
+@media (max-width:768px) {
+
+    iframe {
+        width: 90%;
+        height: 33vh;
+    }
+
+    #speaker {
+        width: 30px;
+    }
+
+    #centre {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 4.5vw;
+    }
+
+    h2 {
+        font-size: 3.5vw;
+    }
+
+    p {
+        font-size: 2.5vw;
+    }
+
+    /* rules to bring in hamburger button and hide menu */
+    nav {
+        position: fixed;
+        flex-direction: column;
+        /* top: 100px; */
+        left: -100%;
+        transition: left 1s linear;
+        width: 100%;
+        height: 100%;
+        background-color: linen;
+        align-items: center;
+    }
+    #hamburger {
+        display: block; 
+    }
+}
+
+/* //portrait mobile */
+@media (max-width:500px) {
+    #speaker {
+        width: 25px;
+    }
+
+    #centre {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+    /* rules to bring in hamburger button and hide menu */
+    nav {
+        position: fixed;
+        flex-direction: column;
+        /* top: 100px; */
+        left: -100%;
+        transition: left 1s linear;
+        width: 100%;
+        height: 100%;
+        background-color: linen;
+    }
+    #hamburger {
+        display: block; 
+    }
+    
+}
+
+
+
+
+/* navigation arrows to appear - up down in portrait - left right in landscape   */
+@media only screen and (orientation: landscape) {
+
+    #left,
+    #right {
+        
+        display: inline-block;
+     
+        
+    }
+}
+
+@media only screen and (orientation: portrait) {
+
+    #up,
+    #down {
+        display: inline-block;
+    }
+
+    #slideshow {
+        flex-direction: column;
+        
+        /* flex-wrap: wrap; */
+    }
+}

@@ -1,0 +1,110 @@
+/* set default fonts for all elements to match h4*/
+* {
+    /* border: dotted; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* set fonts size for counter */
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    user-select: none;
+    padding-bottom: 4px;
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+    padding-top: 20px;
+}
+
+/* main container puts track menu next to controls in flex */
+#container {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    width: 330px;
+    background-color: linen;
+    border-radius: 20px;
+    padding: 20px;
+    /* centre on screen */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#right{
+    display: flex;    
+    flex-direction: row;
+    /* wrap controls so that they appear beneath eachother */
+    flex-wrap: wrap;
+    width: 250px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#current-time {
+    width: 40px;
+    padding-left: 5px;
+}
+
+/* font chosen needs padding on slash */
+#slash {
+    padding-left: 15px;
+}
+
+#total-time {
+    width: 40px;
+    padding-left: 5px;
+}
+
+#play-pause-button {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#seek-bar {
+    width: 150px;
+    cursor: pointer;
+    margin-left: 10px;
+    padding-bottom: 15px;
+
+}
+
+/* volume bar added */
+#volume-bar {
+    width: 150px;
+    cursor: pointer;
+    margin-left: 10px;
+    padding-bottom: 15px;
+}
+
+/* track menu added as  flex box */
+#track-menu {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+/* track options - divs to be used as buttons to select tracks for simplicity */
+.track-options {
+    height: 20px;
+    width: 20px;
+    border: solid;
+    border-radius: 50%;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* rollover with subtle transition */
+.track-options:hover {
+    height: 21px;
+    width: 21px;
+    transition: width 0.5s, height 0.5s;
+}

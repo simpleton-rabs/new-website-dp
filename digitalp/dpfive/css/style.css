@@ -1,0 +1,15 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: darkslategray;
+}
+canvas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* added to css rules as font is not loading properly on first load */
+*{
+  font-family: pangolin;
+}
