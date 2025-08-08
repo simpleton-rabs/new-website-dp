@@ -13,6 +13,7 @@ h1 {
     font-family: 'Bitcount Grid Double', system-ui;
     font-size: 4vw;
     margin-left: 25px;
+    /* text-align: left; */
 }
 
 h2 {
@@ -36,29 +37,6 @@ p {
 
 li > p{
     margin: 0;
-}
-
-#rs {
-
-text-align: right;
-margin-top: 25px;
-    /* font-family: 'Roboto Mono'; */
-    font-size: 2vw;
-
-}
-
-#rs > a {
-    text-decoration: none;
-    color: black;
-}
-
-#rs > a:visited {
-    /* text-decoration: none; */
-    color: black;
-}
-
-#rs > a:active {
-    color: black;
 }
 
 /* nav bar */
@@ -206,6 +184,31 @@ li > a{
     padding: 25px;
 }
 
+
+#rs {
+
+text-align: right;
+margin-top: 25px;
+    /* font-family: 'Roboto Mono'; */
+    font-size: 2vw;
+
+}
+
+#rs > a {
+    text-decoration: none;
+    color: black;
+}
+
+#rs > a:visited {
+    /* text-decoration: none; */
+    color: black;
+}
+
+#rs > a:active {
+    color: black;
+}
+
+
 #container {
     /* margin top/bottom */
     margin-top: 50px;
@@ -296,7 +299,7 @@ li > a{
         font-size: 2.5vw;
     }
 
-    p {
+#rs, p, figcaption, li > a {
         font-size: 1.5vw;
     }
 }
@@ -321,7 +324,7 @@ li > a{
         font-size: 3.5vw;
     }
 
-    p {
+    #rs, p, figcaption, li > a {
         font-size: 2.5vw;
     }
 }
@@ -344,22 +347,18 @@ li > a{
         height: 200px;
     }
 
-    h1 {
-        /* font-size: 4.5vw; */
-        font-size: 3rem;
-    }
 
-    h2 {
-        
-        /* font-size: 3.5vw; */
+    h1 {
         font-size: 2rem;
     }
 
-    p {
-        /* font-size: 2.5vw; */
-              font-size: 1rem;
+    h2 {
+        font-size: 1.75rem;
     }
 
+    #rs, p, figcaption, li > a {
+        font-size: 1.5rem;    
+    }
     /* rules to bring in hamburger button and hide menu */
     nav {
         position: fixed;
@@ -389,39 +388,16 @@ li > a{
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
 
-    #rs {
+    #rs, p, figcaption, li > a {
         font-size: 1rem;    
     }
 
-    p {
-        /* font-size: 2vw; */
-        font-size: 1rem;
-    }
-
-    figcaption {
-        font-size: 1rem;
-    }
-    /* rules to bring in hamburger button and hide menu */
-    nav {
-        position: fixed;
-        flex-direction: column;
-        /* top: 100px; */
-        left: -100%;
-        transition: left 1s linear;
-        width: 100%;
-        height: 100%;
-        background-color: linen;
-    }
-    #hamburger {
-        display: block; 
-    }
-    
 
 }
