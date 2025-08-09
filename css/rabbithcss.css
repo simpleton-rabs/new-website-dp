@@ -38,6 +38,7 @@ figcaption {
 
 .arrow {
     display: none;
+    cursor: pointer;
 }
 
 #slideshow {

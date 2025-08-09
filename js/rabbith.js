@@ -1,24 +1,52 @@
 const pictureFile = [
-    "0.jpeg",
+    "../rabbith/0.jpeg",
     "1.jpeg",
 ];
+
+// console.log(pictureFile);
 
 const pictureCaption = [
     "This is something",
     "This another thing",
 ];
 
-arrayIndex = 0;
+// console.log(pictureCaption);
 
-let imgSrc = document.getElementById(slide);
+const goadText = [
+    "Do you go forwards or do you go backwards?",
+    "Do you go upwards or downwards?",
+    "Does the end become the beginning?",
+    "How long is a piece of string?",
+    "Too many questions and not enought answers?",
 
-let figCaption =
 
-const rightArrow =
+];
+// console.log(goadText);
 
-const leftArrow =
+let arrayIndex = 0;
 
-rightArrow.onClick
 
-leftArrow.onClick
+
+let goadTextIndex = 0;
+
+portrait = window.matchMedia("(orientation: portrait)");
+console.log(portrait);
+
+if (window.matchMedia("(orientation: portrait)")) {
+    goadTextIndex = 1;
+};
+
+console.log("GTI IS " + goadTextIndex);
+
+// let imgSrc = document.getElementById(slide);
+
+// let figCaption =
+
+// const rightArrow =
+
+// const leftArrow =
+
+// rightArrow.onClick
+
+// leftArrow.onClick
 
