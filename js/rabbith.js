@@ -9,6 +9,8 @@ const pictureFile = [
     "../rabbith/seven.jpeg",
     "../rabbith/eight.jpeg",
     "../rabbith/nine.jpeg",
+    "../rabbith/ten.png",
+    "../rabbith/eleven.jpeg",
 ];
 // console.log(pictureFile);
 
@@ -23,6 +25,8 @@ const pictureCaption = [
     "This used to be on my myspace profile",
     "Characters from an ideation task for my L6",
     "Graphics that I used in a flash animation",
+    "An image I sketched on lined paper, I used chatGPT to take away the lines and polish it up.",
+    "My old website graphics",
 ];
 // console.log(pictureCaption);
 
