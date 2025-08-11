@@ -82,6 +82,7 @@ let currentCaption = document.getElementById("caption");
 
 // listeners
 upArrow.onclick = () => {
+
     minusOne();
 };
 
@@ -90,6 +91,9 @@ leftArrow.onclick = () => {
 };
 
 rightArrow.onclick = () => {
+        
+    // currentSlide.style.opacity = 0;
+    // currentSlide.style.transition = "opacity 1s";
     plusOne();
 };
 
