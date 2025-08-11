@@ -1,16 +1,16 @@
 // array for the picture file names
 const pictureFile = [
-    "../rabbith/one.png",
-    "../rabbith/two.gif",
-    "../rabbith/three.jpeg",
-    "../rabbith/four.gif",
-    "../rabbith/five.jpeg",
-    "../rabbith/six.jpeg",
-    "../rabbith/seven.jpeg",
-    "../rabbith/eight.jpeg",
-    "../rabbith/nine.jpeg",
-    "../rabbith/ten.png",
-    "../rabbith/eleven.jpeg",
+    "rabbith/one.png",
+    "rabbith/two.gif",
+    "rabbith/three.jpeg",
+    "rabbith/four.gif",
+    "rabbith/five.jpeg",
+    "rabbith/six.jpeg",
+    "rabbith/seven.jpeg",
+    "rabbith/eight.jpeg",
+    "rabbith/nine.jpeg",
+    "rabbith/ten.png",
+    "rabbith/eleven.jpeg",
 ];
 // console.log(pictureFile);
 
@@ -46,7 +46,8 @@ const goadText = [
     "Nice to be here?",
     "Lost?",
     "What's the time Mr Wolf?",
-    "ERROR!",
+    "To err is to be...?!",
+    "Undefined or unrefined?",
 ];
 
 //set up H2 on load
