@@ -18,7 +18,9 @@ h1 {
 
 h2 {
     font-family: 'Bitcount Grid Double', system-ui;
-    font-size: 3vw;
+    font-size: 2vw;
+    /* margin-left: 25px; */
+    text-align: center;
 }
 
 p {

@@ -1,44 +1,24 @@
 
-p {
-    font-family: 'Roboto Mono';
-    font-size: 1.5vw;
-    /* to keep text paragraphs spaced out */
-    /* margin-top: 5px; */
-    /* margin-bottom: 25px;
-    margin-left: 25px;
-    margin-right: 25px; */
-
-    margin: 0 25px 25px 25px;
-    text-align: justify;
-
-}
-
-
 figure {
-    text-align: center;
-    margin: 0 0 25px 0;
+    /* text-align: center; */
+    /* margin: 0 10px 25px 10px; */
     /* width: 80%; */
 }
 
 figure > img {
-    width: 90%;
+    /* width: 90%;  */
 }
 
-figcaption {
+/* figcaption { 
     font-family: 'Roboto Mono';
-    font-size: 1.5vw;
-    /* to keep text paragraphs spaced out */
-    /* margin-top: 5px; */
-    /* margin-bottom: 25px;
-    margin-left: 25px;
-    margin-right: 25px; */
-
- 
-}
+    font-size: 1.5vw; 
+}*/
 
 .arrow {
     display: none;
     cursor: pointer;
+    width: 100px;
+    height: 100px;    
 }
 
 #slideshow {
@@ -47,6 +27,12 @@ figcaption {
     justify-content: center;
     align-items: center;
 }
+
+#slide {
+    cursor: pointer;
+}
+
+
 
 
 /* //laptops */
