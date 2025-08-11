@@ -1,24 +1,28 @@
 // array for the picture file names
 const pictureFile = [
     "../rabbith/one.png",
-    "../rabbith/two.png",
-    "../rabbith/three.png",
-    "../rabbith/four.png",
-    "../rabbith/five.png",
-    "../rabbith/six.png",
-    "../rabbith/seven.png",
+    "../rabbith/two.gif",
+    "../rabbith/three.jpeg",
+    "../rabbith/four.gif",
+    "../rabbith/five.jpeg",
+    "../rabbith/six.jpeg",
+    "../rabbith/seven.jpeg",
+    "../rabbith/eight.jpeg",
+    "../rabbith/nine.jpeg",
 ];
 // console.log(pictureFile);
 
 //array for the picture descriptions 
 const pictureCaption = [
     "This is something",
-    "This another thing",
-    "Three",
-    "four",
-    "five",
-    "six",
-    "seven",
+    "POVray animation",
+    "The world in my hand",
+    "A gif animation I made for the band No Leader",
+    "Story board for a flash animation",
+    "Story board for a flash animation",
+    "This used to be on my myspace profile",
+    "Characters from an ideation task for my L6",
+    "Graphics that I used in a flash animation",
 ];
 // console.log(pictureCaption);
 
@@ -32,6 +36,12 @@ const goadText = [
     "Does the end become the beginning?",
     "How long is a piece of string?",
     "Too many questions and not enough answers?",
+    "Do you see red? Or do you see green?",
+    "Did you take the red pill?",
+    "Who are we?",
+    "Nice to be here?",
+    "Lost?",
+    "What's the time Mr Wolf?",
     "ERROR!",
 ];
 
