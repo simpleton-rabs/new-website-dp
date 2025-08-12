@@ -140,7 +140,7 @@ nav > a#lcontactme:active {
 figure {
     text-align: center;
     margin: 0 0 25px 0;
-    font-weight: bold;
+
     /* width: 80%; */
 }
 
@@ -151,6 +151,7 @@ figure > img {
 figcaption {
     font-family: 'Roboto Mono';
     font-size: 1.5vw;
+        font-weight: bold;
     /* to keep text paragraphs spaced out */
     /* margin-top: 5px; */
     /* margin-bottom: 25px;

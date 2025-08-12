@@ -81,6 +81,9 @@ let currentSlide = document.getElementById("slide");
 let currentCaption = document.getElementById("caption");
 
 // listeners
+
+// currentSlide.ontransitionend = transEnd();
+
 upArrow.onclick = () => {
 
     minusOne();
@@ -91,9 +94,7 @@ leftArrow.onclick = () => {
 };
 
 rightArrow.onclick = () => {
-        
-    // currentSlide.style.opacity = 0;
-    // currentSlide.style.transition = "opacity 1s";
+
     plusOne();
 };
 
@@ -104,6 +105,12 @@ downArrow.onclick = () => {
 currentSlide.onclick = () => {
     plusOne();
 };
+
+// function transEnd(event){
+//     currentSlide.style.opacity = 1;
+//     currentSlide.style.transition = "opacity 5s";
+// }
+
 
 
 
