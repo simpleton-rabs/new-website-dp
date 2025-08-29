@@ -1,3 +1,4 @@
+//JS specific to home index page
 
 // create audio object
 const soundOne = new Audio("../sounds/sound1.mp3");

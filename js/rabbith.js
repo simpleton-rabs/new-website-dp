@@ -1,3 +1,5 @@
+//JS specific to Rabbit Hole
+
 // array for the picture file names
 const pictureFile = [
     "rabbith/one.png",

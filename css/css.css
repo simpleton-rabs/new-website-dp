@@ -1,3 +1,4 @@
+/* css for most of website */
 * {
     /* border: dotted; */
     box-sizing: border-box;
@@ -13,32 +14,19 @@ h1 {
     font-family: 'Bitcount Grid Double', system-ui;
     font-size: 4vw;
     margin-left: 25px;
-    /* text-align: left; */
 }
 
 h2 {
     font-family: 'Bitcount Grid Double', system-ui;
     font-size: 2vw;
-    /* margin-left: 25px; */
     text-align: center;
 }
 
 p {
-    font-family: 'Roboto Mono';
+    font-family: 'Roboto Mono', monospace;
     font-size: 1.5vw;
-    /* to keep text paragraphs spaced out */
-    /* margin-top: 5px; */
-    /* margin-bottom: 25px;
-    margin-left: 25px;
-    margin-right: 25px; */
-
     margin: 0 25px 25px 25px;
     text-align: justify;
-
-}
-
-li > p{
-    margin: 0;
 }
 
 /* nav bar */
@@ -46,12 +34,8 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
-
-    
-    
-    /* position: fixed; */
 }
+/*nav bar buttons dimensions and move text*/
 nav > a{
     height: 75px;
     width: 75px;
@@ -59,13 +43,13 @@ nav > a{
     background-size: 100%;
     text-indent: -9999px;
 }
-
+/*nav bar buttons transition on hover */
 nav > a:hover {
     height: 80px;
     width: 80px;
     transition: width 2s linear;
 }
-
+/*individual buttons images and rollovers*/
 /* hello */
 nav > a#lhello {
     background-image: url("../menuimg/hello.png");
@@ -137,114 +121,88 @@ nav > a#lcontactme:active {
     background-image: url("../menuimg/contactmei.png");
 }
 
+/*images*/
 figure {
     text-align: center;
     margin: 0 0 25px 0;
-
-    /* width: 80%; */
 }
-
 figure > img {
     max-width: 90%;
 }
-
 figcaption {
     font-family: 'Roboto Mono';
     font-size: 1.5vw;
-        font-weight: bold;
-    /* to keep text paragraphs spaced out */
-    /* margin-top: 5px; */
-    /* margin-bottom: 25px;
-    margin-left: 25px;
-    margin-right: 25px; */
+    font-weight: bold;
 }
 
+/*youtube embedded videos*/
 iframe {
     margin-bottom: 25px;
 }
 
+/*unordered lists for links*/
 ul {
     list-style: none;
     margin-left: 25px;
 }
-
 li {
-
     margin-bottom: 25px;
 }
+/*list items that are links, keep looking like trad links just change font*/
 li > a{
     font-family: 'Roboto Mono';
     font-size: 1.5vw;
     margin-bottom: 25px;
 }
+/*list items that are text*/
+li > p{
+    margin: 0;
+}
 
-
+/*class targets divs that hold content of each page*/
 .contentdiv {
-    /* position: relative; */
-    margin-top: 25px;
-    /* z-index: -50px; */
+    margin-bottom: 25px;
     background-color: linen;
     border-radius: 25px;
     padding: 25px;
 }
 
-
-#rs {
-
-text-align: right;
-margin-top: 25px;
-    /* font-family: 'Roboto Mono'; */
-    font-size: 2vw;
-
-}
-
-#rs > a {
-    text-decoration: none;
-    color: black;
-}
-
-#rs > a:visited {
-    /* text-decoration: none; */
-    color: black;
-}
-
-#rs > a:active {
-    color: black;
-}
-
-
+/*container for header and content divs*/
 #container {
     /* margin top/bottom */
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     /* equal space either side */
     margin-left: auto;
     margin-right: auto;
-    border-radius: 25px;
 
+    border-radius: 25px;
     padding: 10px;
-    /* background-color: linen; */
-    /* max-width: 800px; */
-    /* min-width: 100px; */
     width: 90vw;
-    /* display: flex; */
-    /* flex-direction: column; */
     align-items: center;
+    /*header and around to be sticky*/
     position: relative;
 }
 
+/*creates a black space around the header for content divs to dissapear under*/
+/*to be sticky along with child elements to be on top like frame menu*/
+#aroundheader {
+    background-color: black;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+/*header will be sticky like parent*/
 #header {
         background-color: linen;
         width: 100%;
         border-radius: 25px;
-        padding-bottom: 50px;
+        padding-bottom: 5px;
         margin-bottom: 25px;
-        overflow: hidden;
-        position: sticky;
-        top: 0;
-        
-
-        
+        /* overflow: hidden; */
+        /* position: sticky; */
+        /* top: 0; */       
 }
 
 #speaker {
@@ -253,41 +211,42 @@ margin-top: 25px;
     cursor: pointer;
 }
 
+/*hamburger hidden*/
 #hamburger {
     display: none;
     cursor: pointer;
-    
-
 }
 
+/*clicking this to go home, take off hyperlink stylings*/
+#rs {
+    text-align: right;
+    margin-top: 25px;
+    font-size: 2vw;
+}
+#rs > a {
+    text-decoration: none;
+    color: black;
+}
+#rs > a:visited {
+    /* text-decoration: none; */
+    color: black;
+}
+#rs > a:active {
+    color: black;
+}
 
-
+/* title give space underneath h1*/
 #title {
     height: 100px;
-
-
 }
 
+/*styling for sun image*/
 #centre {
     width: 300px;
     height: 300px;
- /*   
-    transform: rotatez(0deg);
-    animation-name: rotateit;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;*/
 }
-/*
-@keyframes rotateit {
-    0% {
-        transform: rotatez(0deg);
-    }
 
-    100% {
-        transform: rotatez(360deg);
-    }
-}*/
-
+/*responsive break points*/
 /* //laptops */
 @media (max-width:1200px) {
     #centre {
@@ -351,7 +310,6 @@ margin-top: 25px;
         height: 200px;
     }
 
-
     h1 {
         font-size: 2rem;
     }
@@ -363,6 +321,7 @@ margin-top: 25px;
     #rs, p, figcaption, li > a {
         font-size: 1.5rem;    
     }
+
     /* rules to bring in hamburger button and hide menu */
     nav {
         position: fixed;
@@ -375,6 +334,7 @@ margin-top: 25px;
         background-color: linen;
         align-items: center;
     }
+
     #hamburger {
         display: block; 
     }
@@ -402,6 +362,5 @@ margin-top: 25px;
     #rs, p, figcaption, li > a {
         font-size: 1rem;    
     }
-
 
 }

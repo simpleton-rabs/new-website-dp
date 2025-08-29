@@ -1,3 +1,4 @@
+//JS specific to most of website
 
 // create audio object
 const soundTwo = new Audio("../sounds/sound2.mp3");
@@ -5,7 +6,9 @@ soundTwo.loop = true;
 // const for speaker icon
 const speakerIcon = document.getElementById("speaker");
 
+//variable to show if hamburger is on or off
 let hamburgerStatus = false;
+//const for hamburger icon 
 const hamburgerIcon = document.getElementById("hamburger");
 // const navigation = document.getElementsByTagName("nav");
 const navigation = document.getElementById("navbar");
