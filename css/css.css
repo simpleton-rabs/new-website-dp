@@ -34,11 +34,14 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    transition: all 1s;
+
 }
 /*nav bar buttons dimensions and move text*/
 nav > a{
     height: 75px;
     width: 75px;
+    transition: all 2s linear;
     background-repeat: no-repeat;
     background-size: 100%;
     text-indent: -9999px;
@@ -47,7 +50,7 @@ nav > a{
 nav > a:hover {
     height: 80px;
     width: 80px;
-    transition: width 2s linear;
+    
 }
 /*individual buttons images and rollovers*/
 /* hello */
@@ -328,7 +331,7 @@ li > p{
         flex-direction: column;
         /* top: 100px; */
         left: -100%;
-        transition: left 1s linear;
+        /* transition: left 1s linear; */
         width: 100%;
         height: 100%;
         background-color: linen;

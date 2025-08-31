@@ -19,16 +19,16 @@ const pictureFile = [
 //array for the picture descriptions 
 const pictureCaption = [
     "This is something",
-    "POVray animation",
+    "POVray 3D animation",
     "The world in my hand",
     "A gif animation I made for the band No Leader",
-    "Story board for a flash animation",
-    "Story board for a flash animation",
+    "Story board for a flash animation Space Dude",
+    "Story board for a flash animation Space Dude",
     "This used to be on my myspace profile",
     "Characters from an ideation task for my L6",
-    "Graphics that I used in a flash animation",
+    "Graphics that I used in a flash animation Space Dude vs Green Monster",
     "An image I sketched on lined paper, I used chatGPT to take away the lines and polish it up.",
-    "My old website graphics",
+    "My old website graphics sketched by hand and scanned in",
 ];
 // console.log(pictureCaption);
 
@@ -50,6 +50,11 @@ const goadText = [
     "What's the time Mr Wolf?",
     "To err is to be...?!",
     "Undefined or unrefined?",
+    "Randomation in the Dum Dum Nation",
+    "Whaaaaat?",
+    "Radiation moves in concentric circles",
+    "Go to 10",
+    "Only the twinkling stars know the truth",
 ];
 
 //set up H2 on load
@@ -83,11 +88,7 @@ let currentSlide = document.getElementById("slide");
 let currentCaption = document.getElementById("caption");
 
 // listeners
-
-// currentSlide.ontransitionend = transEnd();
-
 upArrow.onclick = () => {
-
     minusOne();
 };
 
@@ -96,7 +97,6 @@ leftArrow.onclick = () => {
 };
 
 rightArrow.onclick = () => {
-
     plusOne();
 };
 
@@ -108,58 +108,63 @@ currentSlide.onclick = () => {
     plusOne();
 };
 
-// function transEnd(event){
-//     currentSlide.style.opacity = 1;
-//     currentSlide.style.transition = "opacity 5s";
-// }
-
-
-
-
-
-
-// let imgSrc = document.getElementById(slide);
-
-// let figCaption =
-
-// const rightArrow =
-
-// const leftArrow =
-
-// rightArrow.onClick
-
-// leftArrow.onClick
+currentSlide.ontransitionend = setPic;
 
 function plusOne() {
     // arrayIndex++;
+    currentSlide.style.opacity = 0;
+    currentSlide.style.transition = "opacity 2s ease-out";
     if (arrayIndex == pictureFile.length - 1) {
         arrayIndex = 0;
-        currentSlide.src = pictureFile[arrayIndex];
-        currentCaption.innerHTML = pictureCaption[arrayIndex];
+        // setPic();
         setGoad();
     } else{
         arrayIndex = arrayIndex + 1;
-        currentSlide.src = pictureFile[arrayIndex];
-        currentCaption.innerHTML = pictureCaption[arrayIndex];
+        // setPic();
         setGoad();
     } 
 }
 
 function minusOne() {
     // arrayIndex++;
+    //fade out
+        currentSlide.style.opacity = 0;
+        currentSlide.style.transition = "opacity 2s ease-out";
     if (arrayIndex == 0) {
         arrayIndex = pictureFile.length -1;
-        currentSlide.src = pictureFile[arrayIndex];
-        currentCaption.innerHTML = pictureCaption[arrayIndex];
+        // setPic();
         setGoad();
     } else{
         arrayIndex = arrayIndex - 1;
-        currentSlide.src = pictureFile[arrayIndex];
-        currentCaption.innerHTML = pictureCaption[arrayIndex];
+        // setPic();
         setGoad();
     } 
 }
 
+/*function setPic(event) {
+    currentSlide.src = pictureFile[arrayIndex];
+    currentCaption.innerHTML = pictureCaption[arrayIndex];
+    currentSlide.style.opacity = 1;
+    currentSlide.style.transition = "opacity 2s ease-in";
+}*/
+
+function setPic() {
+    let src = pictureFile[arrayIndex];
+//courtest of chat GPT
+    // If it's a GIF, force reload by adding a cache-busting query param
+    if (src.endsWith(".gif")) {
+        src += `?t=${Date.now()}`;
+    }
+
+    currentSlide.src = src;
+    currentCaption.innerHTML = pictureCaption[arrayIndex];
+
+    // Fade back in
+    currentSlide.style.transition = "opacity 1s ease-in";
+    currentSlide.style.opacity = 1;
+}
+
+//set goad text
 function setGoad() {
     goadTextElement.innerHTML = goadText[Math.floor(Math.random() * goadText.length)];
 }

@@ -41,13 +41,3 @@ hamburgerIcon.onclick = () => {
     // navigation.display = "flex";
     // navigation.flex-direction = "column";
 }
-//set greeting as per current hour
-// if (currentHour >= 17) {
-//     greeTing.innerHTML = "Good Evening"
-// } else if (currentHour >= 12) {
-//     greeTing.innerHTML = "Good Afternoon";
-// } else if (currentHour >= 0){
-//     greeTing.innerHTML = "Good Morning";
-// } else {
-//     greeTing.innerHTML = "Welcome"
-// }
