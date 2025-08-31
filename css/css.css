@@ -334,8 +334,12 @@ li > p{
         /* transition: left 1s linear; */
         width: 100%;
         height: 100%;
+        /* width: 100%; */
+        /* height: 100vh; */
+        
         background-color: linen;
         align-items: center;
+        /* margin-bottom: 1000px; */
     }
 
     #hamburger {

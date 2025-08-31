@@ -129,7 +129,7 @@ function minusOne() {
     // arrayIndex++;
     //fade out
         currentSlide.style.opacity = 0;
-        currentSlide.style.transition = "opacity 2s ease-out";
+        currentSlide.style.transition = "opacity 1s ease-out";
     if (arrayIndex == 0) {
         arrayIndex = pictureFile.length -1;
         // setPic();
@@ -141,6 +141,7 @@ function minusOne() {
     } 
 }
 
+//before chatGPT was prompted for fix for old gifs starting on last frame
 /*function setPic(event) {
     currentSlide.src = pictureFile[arrayIndex];
     currentCaption.innerHTML = pictureCaption[arrayIndex];
@@ -150,7 +151,7 @@ function minusOne() {
 
 function setPic() {
     let src = pictureFile[arrayIndex];
-//courtest of chat GPT
+    //code to reset gifs courtest of chatGPT
     // If it's a GIF, force reload by adding a cache-busting query param
     if (src.endsWith(".gif")) {
         src += `?t=${Date.now()}`;
@@ -160,7 +161,7 @@ function setPic() {
     currentCaption.innerHTML = pictureCaption[arrayIndex];
 
     // Fade back in
-    currentSlide.style.transition = "opacity 1s ease-in";
+    currentSlide.style.transition = "opacity 0.5s ease-in";
     currentSlide.style.opacity = 1;
 }
 
