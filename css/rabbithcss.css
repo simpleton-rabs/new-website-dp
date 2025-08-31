@@ -1,34 +1,44 @@
+/* CSS specific to Rabbit Hole */
 
+figure > img {
+    max-height: 50vh;
+}
+
+/* arrows default to display none */
 .arrow {
     display: none;
     cursor: pointer;
     width: 100px;
     height: 100px;    
+    transition: all linear 2s;
+    
 }
 
+/* arrow rollover behaviour */
 .arrow:hover {
-    width: 105px;
+    width: 105px;   
     height: 105px;
-    transition: width linear 2s;
+    /* transition: width linear 4s; */
 }
 
+/* slideshow */
 #slideshow {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* max-height: 50vh; */
 }
 
+/* make picture clickable */
 #slide {
     cursor: pointer;
 }
 
-
-
-
+/* responsive break points by screen width*/
 /* //laptops */
 @media (max-width:1200px) {
-    
+
 }
 
 /* //landscape tablets */
@@ -37,13 +47,13 @@
         width: 75px;
         height: 75px;
     }
+
     .arrow:hover {
     width: 85px;
     height: 85px;
-    transition: width linear 2s;
+    /* transition: width linear 2s; */
     }
 }
-
 
 /* //portrait tablets - large landscape mobile */
 @media (max-width:768px) {
@@ -51,10 +61,11 @@
         width: 50px;
         height: 50px;
     }
+
     .arrow:hover {
     width: 55px;
     height: 55px;
-    transition: width linear 2s;
+    /* transition: width linear 2s; */
 }
     
 }
@@ -62,24 +73,18 @@
 /* //portrait mobile */
 @media (max-width:500px) {
 
-    
 }
 
 
 /* navigation arrows to appear - up down in portrait - left right in landscape   */
 @media only screen and (orientation: landscape) {
-
     #left,
     #right {
-        
         display: inline-block;
-     
-        
     }
 }
 
 @media only screen and (orientation: portrait) {
-
     #up,
     #down {
         display: inline-block;
@@ -87,7 +92,6 @@
 
     #slideshow {
         flex-direction: column;
-        
         /* flex-wrap: wrap; */
     }
 }
